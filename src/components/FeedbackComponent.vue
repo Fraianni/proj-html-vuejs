@@ -1,6 +1,6 @@
 <template>
-    <div class="feedback">
-            
+    <div class="container">
+        <div class="feedback">
             <div class="stats">
                 <h3>1.926</h3>
                 <p>FINISHED SESSIONS</p>
@@ -18,6 +18,9 @@
                 <p>ONLINE ISTRUCTORS</p>
             </div>
         </div>
+    </div>
+
+ 
     
   
 </template>
@@ -29,7 +32,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
     .feedback{
+        width: 1400px;
+
         display: flex;
         justify-content: center;
         .stats{

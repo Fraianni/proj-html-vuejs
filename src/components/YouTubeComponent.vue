@@ -1,15 +1,22 @@
 <template>
-  <div class="container">
-    <div class="video_preview">
-        <img src="../assets/motivation/images/home-movation-video-poster-670x450.jpg" alt="">
+    <div class="container">
+        <div class="video">
+            <div class="video_preview">
+                <img class="person" src="../assets/motivation/images/home-movation-video-poster-670x450.jpg" alt="">
+                <img class="play" src="../assets/motivation/images/icon-youtube-play.png" alt="">
+
+            </div>
+            <div class="video_info">
+                <p>"Every morning you have two choices: continue to sleep with your dreams, or wake up and chase them."</p>
+                <img src="../assets/motivation/images/home-movation-shape-01.png" alt="">
+                <h3>Kaixa Stark</h3>
+                <span>WINGMAN</span>
+            </div>
+         </div>
     </div>
-    <div class="video_info">
-        <p>"Every morning you have two choices: continue to sleep with your dreams, or wake up and chase them."</p>
-        <img src="../assets/motivation/images/home-movation-shape-01.png" alt="">
-        <h3>Kaixa Stark</h3>
-        <span>WINGMAN</span>
-    </div>
-  </div>
+
+
+
 </template>
 
 <script>
@@ -20,12 +27,32 @@ export default {
 
 <style scoped lang="scss">
     .container{
+        display: flex;
+        justify-content: center;
+    }
+    .video{
         margin-top: 100px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 1400px;
         .video_preview{
-            img{
+            position: relative;
+            flex-grow:0.5;
+            .person{
                 width: 100%;
+            }
+            .play{
+                position:absolute;
+                left: 50%;
+                top: 45%;
+                transform: translateX(-50%);
+                &:hover{
+                    filter: grayscale(50%);
+                  
+                }
+                
+
+            
             }
         }
         .video_info{

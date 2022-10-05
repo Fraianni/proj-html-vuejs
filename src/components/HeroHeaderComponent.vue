@@ -1,5 +1,6 @@
 <template>
-    <section>
+    <div class="container">
+        <section>
         <div class="HeaderInfo">
             <h5>I'M WINGMAN</h5>
             <h1>Peace On Earth A Wonderful Wish But No Way</h1>
@@ -11,6 +12,8 @@
 
         </div>
     </section>
+    </div>
+    
   
 </template>
 
@@ -21,11 +24,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    .container{
+        display: flex;
+        justify-content: center;
+    }
     section{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin-top: 100px;
+        width: 1400px;
         
         .HeaderImg{
             background-image: url('../assets/motivation/images/home-movation-shape-face.png');
