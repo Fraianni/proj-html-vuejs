@@ -6,7 +6,10 @@
             <p>Succes is not overnight.It is when everyday you get a little better than the day before</p>
             <button> Get Started For &#8594;</button>
         </div>
-        <img src="../assets/motivation/images/home-movation-hero-image.png" alt="">
+        <div class="HeaderImg">
+            <img src="../assets/motivation/images/home-movation-hero-image.png" alt="">
+
+        </div>
     </section>
   
 </template>
@@ -23,6 +26,15 @@ export default {
         justify-content: space-around;
         align-items: center;
         margin-top: 100px;
+        .HeaderImg{
+            background-image: url('../assets/motivation/images/home-movation-shape-face.png');
+            background-size: contain;
+            background-position-y: bottom;
+            background-repeat: no-repeat;
+            img{
+                width: 100%;
+            }
+        }
         .HeaderInfo{
             max-width: 450px;
             text-align:left;
@@ -39,6 +51,9 @@ export default {
             padding: 10px 50px;
             color: white;
             background-color: #20ac97;
+            &:hover{
+                background-color: #171520;
+            }
         }
     }
     }

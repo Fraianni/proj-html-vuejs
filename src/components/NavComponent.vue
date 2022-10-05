@@ -49,6 +49,8 @@ export default {
 
 <style scoped lang="scss">
 
+    
+
     img{
         max-width: 200px;
     }
@@ -57,6 +59,7 @@ export default {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-top: 10px;
         
         ul{
             display: flex;
