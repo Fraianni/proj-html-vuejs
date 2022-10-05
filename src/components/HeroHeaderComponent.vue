@@ -26,6 +26,7 @@ export default {
         justify-content: space-around;
         align-items: center;
         margin-top: 100px;
+        
         .HeaderImg{
             background-image: url('../assets/motivation/images/home-movation-shape-face.png');
             background-size: contain;
@@ -39,23 +40,26 @@ export default {
             max-width: 450px;
             text-align:left;
             font-size: 2rem;
-        p{
-            font-size: 1rem;
-        }
-        h5{
-            font-size: 1rem;
-        }
-        button{
-            border-radius: 5px;
-            border-style: none;
-            padding: 10px 50px;
-            color: white;
-            background-color: #20ac97;
-            &:hover{
-                background-color: #171520;
+            p{
+                font-size: 1rem;
             }
-        }
-    }
+            h1{
+                margin: 40px 0px;
+            }
+            h5{
+                font-size: 1rem;
+            }
+            button{
+                border-radius: 5px;
+                border-style: none;
+                padding: 10px 50px;
+                color: white;
+                background-color: #20ac97;
+                &:hover{
+                    background-color: #171520;
+                }
+            }
+         }
     }
 
 </style>

@@ -59,15 +59,15 @@ export default {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 10px;
+        padding-top: 20px;
         
         ul{
             display: flex;
             list-style: none;
             text-decoration: none;
-            transform: translateY(+25%);
+            // transform: translateY(+25%);
             li{
-                margin-right: 10px;
+                padding: 0px 20px;
                 color: #171520;
                 a{
                     text-decoration: none;

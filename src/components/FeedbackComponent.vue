@@ -36,11 +36,11 @@ export default {
             display: flex;
             flex-direction: column;
             height: 70px;
-            justify-content:space-between;
+            justify-content:space-around;
             align-items: center;
             margin: 20px 0px;
             border-left:1px dashed #20ac97;
-            padding: -0px 80px;
+            padding: 0px 120px;
             &.double{
                 border-right:1px dashed #20ac97;
 
