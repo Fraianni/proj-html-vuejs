@@ -3,22 +3,22 @@
     <img src="../assets/motivation/images/dark-logo.png" alt="dark-logo">
     <ul>
         <li>
-            <a href="#">Home</a>
+            <a href="#">Home<span>&#9660;</span></a>
         </li>
         <li>
-            <a href="#">Pages</a>
+            <a href="#">Pages<span>&#9660;</span></a>
         </li>
         <li>
-            <a href="#">Courses</a>
+            <a href="#">Courses<span>&#9660;</span></a>
         </li>
         <li>
-            <a href="#">Features</a>
+            <a href="#">Features<span>&#9660;</span></a>
         </li>
         <li>
-            <a href="#">Blog</a>
+            <a href="#">Blog<span>&#9660;</span></a>
         </li>
         <li>
-            <a href="#">Shop</a>
+            <a href="#">Shop<span>&#9660;</span></a>
         </li>
     </ul>
 
@@ -68,6 +68,8 @@ export default {
                 color: #171520;
                 a{
                     text-decoration: none;
+                    // span:hover{
+                    // }
                 }
             }
 
