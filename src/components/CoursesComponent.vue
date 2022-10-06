@@ -28,15 +28,18 @@ export default {
     .container{
         display: flex;
         justify-content: center;
+        padding-bottom: 50px;
         .courses{
             width: 1400px;
             display: flex;
             flex-wrap: wrap;
+            
             .course{
                 // display: inline-block;
                 width: calc(100% / 3 ) ;
                 &:hover{
                     transform: scale(1.1); 
+                    opacity: 0.9;
                 }
             }
         }
