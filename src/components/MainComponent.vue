@@ -8,6 +8,8 @@
       <h1>Latest <span>Online Courses</span> </h1>
     </div>
     <CoursesComponent :courses="courses" />
+    <button>View all courses</button>
+    <BooksComponent />
      
   </main>
 </template>
@@ -16,12 +18,14 @@
 import courses from '../assets/data/courses.json'
 import PanoramaComponent from './PanoramaComponent.vue'
 import CoursesComponent from './CoursesComponent.vue'
+import BooksComponent from './BooksComponent.vue'
 export default {
     name:'MainComponent',
 
     components:{
         PanoramaComponent,
-        CoursesComponent
+        CoursesComponent,
+        BooksComponent,
         
     },
     // props:{
@@ -46,5 +50,17 @@ export default {
       color:#20ac97;
     }
   }
+
+  button{
+                border-radius: 5px;
+                border-style: none;
+                color: white;
+                padding: 10px 50px;
+                background-color: #20ac97;
+                margin-top: 40px;
+                &:hover{
+                    background-color: #171520;
+                }
+            }
 
 </style>
