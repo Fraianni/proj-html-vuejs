@@ -24,16 +24,17 @@
 
     <ul>
         <li>        
-            <font-awesome-icon icon="fa-regular fa-star" />
+            <!-- <font-awesome-icon icon="fa-solid fa-check" /> -->
+            <font-awesome-icon icon="fa-brands fa-facebook" />
         </li>
         <li>        
-            <font-awesome-icon icon="fa-regular fa-star" />
+            <font-awesome-icon icon="fa-brands fa-instagram" />
         </li>
         <li>        
-            <font-awesome-icon icon="fa-regular fa-star" />
+            <font-awesome-icon icon="fa-brands fa-youtube" />
         </li>
         <li>        
-            <font-awesome-icon icon="fa-regular fa-star" />
+            <font-awesome-icon icon="fa-brands fa-twitter " />
         </li>
 
     </ul>

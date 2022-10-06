@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent />
-    <MainComponent />
+    <MainComponent :courses="courses" />
   </div>
 </template>
 
@@ -15,7 +15,8 @@ export default {
     HeaderComponent,
     MainComponent,
 
-  }
+  },
+  
 }
 </script>
 
