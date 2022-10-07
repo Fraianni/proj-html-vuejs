@@ -10,15 +10,23 @@
     <CoursesComponent :courses="courses" />
     <button>View all courses</button>
     <BooksComponent />
+    <ClientComponent :client="client" />
+    <SliderComponent :slides="slides" />
      
   </main>
 </template>
 
 <script>
 import courses from '../assets/data/courses.json'
+import client from '../assets/data/client.json'
+import slides from '../assets/data/slides.json'
 import PanoramaComponent from './PanoramaComponent.vue'
 import CoursesComponent from './CoursesComponent.vue'
 import BooksComponent from './BooksComponent.vue'
+import ClientComponent from './ClientComponent.vue'
+import SliderComponent from './SliderComponent.vue'
+
+
 export default {
     name:'MainComponent',
 
@@ -26,15 +34,17 @@ export default {
         PanoramaComponent,
         CoursesComponent,
         BooksComponent,
+        ClientComponent,
+        SliderComponent,
+      
         
     },
-    // props:{
-    //   courses:Array,
-
-    // },
+   
     data(){
     return {
-      courses
+      courses,
+      client,
+      slides
     }
   }
 }

@@ -34,9 +34,11 @@ export default {
             display: flex;
             flex-wrap: wrap;
             
+            
             .course{
                 // display: inline-block;
                 width: calc(100% / 3 ) ;
+                
                 &:hover{
                     transform: scale(1.1); 
                     opacity: 0.9;

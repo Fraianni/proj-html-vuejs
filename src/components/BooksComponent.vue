@@ -51,6 +51,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    @import '../style/variables.scss';
     .container{
         display: flex;
         justify-content: center;
@@ -71,7 +72,7 @@ export default {
                     }
                 }
                 span{
-                        color:#20ac97;
+                        color: green_header;
                     }
                 h1{
                     margin: 30px 0px;
