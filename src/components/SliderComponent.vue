@@ -95,6 +95,7 @@ export default {
                 justify-content: space-around;
                 .prev,.next >*{
                     color: gray;
+                    cursor: pointer;
                 }
             }
             .slide{
