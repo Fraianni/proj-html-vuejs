@@ -1,13 +1,14 @@
 <template>
   <div class="container">
     <div class="slides">
-        <p>REAL STORIES</p>
+        <p class="title">REAL STORIES</p>
         <div class="slide" v-for="slide in slides" :key="slide.id">
             <div class="active" v-if="slide.id === order">
                 <p>{{slide.description}}</p>
                 <img :src="require(`@/assets/motivation/images/${slide.thumb}`)" alt="">
                 <p>{{slide.name}}</p>
                 <p>{{slide.role}}</p>
+                <p class="slide-position">{{slide.id}} / 4</p>
             </div>
         </div>
         <div class="round-button">
@@ -59,6 +60,13 @@ export default {
 
 <style scoped lang="scss">
     @import '../style/variables.scss';
+    .slide-position{
+        position:absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateX(+50%);
+        z-index: 1;
+    }
     .container{
         width: 100%;
         display: flex;
@@ -67,14 +75,17 @@ export default {
              width: 50%;
              background-color: $athens_grey;
              background-image: url('../assets/motivation/images/background-pattern-wavify.png');
+             .title{
+                color:$green_header;
+             }
             .round-button{
                 position: absolute;
                 right: 0px;
                 top: 45%;
                 transform: translateX(+50%);
                 background: red;
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
                 -moz-border-radius: 50px;
                 -webkit-border-radius: 50px;
                 border-radius: 50px;
@@ -87,7 +98,9 @@ export default {
                 }
             }
             .slide{
+                
                 .active{
+                 
                     display: flex;
                     flex-direction: column;
                     align-items: center;
