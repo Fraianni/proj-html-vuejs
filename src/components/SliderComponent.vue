@@ -4,7 +4,7 @@
         <p class="title">REAL STORIES</p>
         <div class="slide" v-for="slide in slides" :key="slide.id">
             <div class="active" v-if="slide.id === order">
-                <p>{{slide.description}}</p>
+                <p class="description">{{slide.description}}</p>
                 <img :src="require(`@/assets/motivation/images/${slide.thumb}`)" alt="">
                 <p>{{slide.name}}</p>
                 <p>{{slide.role}}</p>
@@ -77,6 +77,7 @@ export default {
              background-image: url('../assets/motivation/images/background-pattern-wavify.png');
              .title{
                 color:$green_header;
+                margin-top: 50px;
              }
             .round-button{
                 position: absolute;
@@ -99,7 +100,7 @@ export default {
                 }
             }
             .slide{
-                
+                height: 100%;
                 .active{
                  
                     display: flex;
@@ -109,7 +110,13 @@ export default {
                     img{
                         border-radius: 50%;
                         width: 150px;
+                        margin-top: 50px;
                     }
+                    .description{
+                        font-size: 1.5rem;
+                        margin-top: 50px;
+                    }
+                    
                 }
             }
            
