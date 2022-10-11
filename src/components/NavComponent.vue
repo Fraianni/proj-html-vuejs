@@ -90,6 +90,7 @@ export default {
         .links{
             display: flex;
             flex-direction: column;
+            justify-content: space-around;
         }
         img{
             width: 600px;
